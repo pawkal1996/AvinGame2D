@@ -4,6 +4,7 @@ public abstract class Character {
 	private int experience;
 	private int attack;
 	private int defense;
+	private int healthPoints;
 	
 	public int getExperience() {
 		return experience;
@@ -22,6 +23,12 @@ public abstract class Character {
 	}
 	public void setDefense(int defense) {
 		this.defense = defense;
+	}
+	public int getHealthPoints() {
+		return healthPoints;
+	}
+	public void setHealthPoints(int healthPoints) {
+		this.healthPoints = healthPoints;
 	}
 
 }
