@@ -1,5 +1,10 @@
 package Characters;
 
+/**
+ * Abstract class for all characters
+ * @author Pawel K
+ *
+ */
 public abstract class Character {
 	private int experience;
 	private int attack;
