@@ -4,6 +4,11 @@ public abstract class Item {
 	private static int id=0;
 	protected String name;
 	
+	public static void createItems() {
+		Sword.createSwords();
+		Armor.createArmors();
+		Gold.createGold();
+	}
 	public String getName() {
 		return name;
 	}
