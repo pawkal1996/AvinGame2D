@@ -1,4 +1,4 @@
-package Characters;
+package characters;
 
 /**
  * Abstract class for all characters
