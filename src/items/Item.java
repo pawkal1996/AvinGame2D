@@ -1,14 +1,14 @@
 package items;
 
 public abstract class Item {
-	private int id;
-
+	private static int id=0;
+	
 	public int getId() {
 		return id;
 	}
 
-	public void setId(int id) {
-		this.id = id;
+	public void increaseId() {
+		Item.id =+ 1;
 	}
 	
 }
