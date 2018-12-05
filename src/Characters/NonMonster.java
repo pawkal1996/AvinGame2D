@@ -6,6 +6,7 @@ public class NonMonster extends Character {
 	private int lvl;
 	private int speed;
 	
+	
 	public int getId() {
 		return id;
 	}
