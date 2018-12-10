@@ -1,5 +1,10 @@
 package items;
 
+/**
+ * Abstract class having subclasses: Sword, Armor, Gold, MagicBox, Gold
+ * @author Pawe³ K
+ *
+ */
 public abstract class Item {
 	private static int id=0;
 	protected String name;

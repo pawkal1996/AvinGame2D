@@ -3,6 +3,11 @@ package items;
 import java.util.ArrayList;
 import java.util.Random;
 
+/**
+ * MagicBox is a special Item which contains random item
+ * @author Pawe³ K
+ *
+ */
 public class MagicBox extends Item {
 	private static ArrayList<Item> magicBoxDrop = new ArrayList<Item>();
 	public static void initDropBox() {
@@ -14,8 +19,8 @@ public class MagicBox extends Item {
 		magicBoxDrop.add(Armor.armor2);
 		magicBoxDrop.add(Armor.armor3);
 		magicBoxDrop.add(Armor.armor4);
-		magicBoxDrop.add(Gold.gold100);
-		magicBoxDrop.add(Gold.gold150);
+		magicBoxDrop.add(Gold.getGold100());
+		magicBoxDrop.add(Gold.getGold150());
 	}
 	
 	public static Item openDropBox() {

@@ -1,8 +1,12 @@
 package items;
 
+/**
+ * Class for weapons
+ * @author Pawe³ K
+ *
+ */
 public class Sword extends Item {
-	
-	
+		
 	static Sword sword1;
 	static Sword sword2;
 	static Sword sword3;
@@ -31,9 +35,4 @@ public class Sword extends Item {
 	public void setAttac(int attack) {
 		this.attack = attack;
 	}
-	
-	
-
-	
-	
 }
