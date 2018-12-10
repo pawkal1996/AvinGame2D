@@ -3,6 +3,10 @@ package items;
 public class Sword extends Item {
 	
 	
+	static Sword sword1;
+	static Sword sword2;
+	static Sword sword3;
+	static Sword sword4;
 	
 	public Sword(String name, int attack) {
 		super();
@@ -11,10 +15,10 @@ public class Sword extends Item {
 	}
 
 	public static void createSwords() {
-		Sword sword1 = new Sword("¯elazny sztylet", 10);
-		Sword sword2 = new Sword("Diabelska brzytwa", 20);
-		Sword sword3 = new Sword("Piekielny tasak", 30);
-		Sword sword4 = new Sword("Epicka halabarda", 40);
+		sword1 = new Sword("¯elazny sztylet", 10);
+		sword2 = new Sword("Diabelska brzytwa", 20);
+		sword3 = new Sword("Piekielny tasak", 30);
+		sword4 = new Sword("Epicka halabarda", 40);
 	}
 	
 	
