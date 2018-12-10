@@ -10,6 +10,12 @@ public class MagicBox extends Item {
 		magicBoxDrop.add(Sword.sword2);
 		magicBoxDrop.add(Sword.sword3);
 		magicBoxDrop.add(Sword.sword4);
+		magicBoxDrop.add(Armor.armor1);
+		magicBoxDrop.add(Armor.armor2);
+		magicBoxDrop.add(Armor.armor3);
+		magicBoxDrop.add(Armor.armor4);
+		magicBoxDrop.add(Gold.gold100);
+		magicBoxDrop.add(Gold.gold150);
 	}
 	
 	public static Item openDropBox() {

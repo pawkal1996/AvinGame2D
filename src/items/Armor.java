@@ -1,6 +1,12 @@
 package items;
 
 public class Armor extends Item {
+	
+	static Armor armor1;
+	static Armor armor2;
+	static Armor armor3;
+	static Armor armor4;
+	
 	public Armor(String name, int defense) {
 		super();
 		this.name = name;
@@ -8,10 +14,10 @@ public class Armor extends Item {
 	}
 	
 	public static void createArmors() {
-		Armor armor1 = new Armor("¯elazna zbroja", 10);
-		Armor armor2 = new Armor("Kolczaty ¿upan", 20);
-		Armor armor3 = new Armor("Szata niewiernego Osazego", 30);
-		Armor armor4 = new Armor("Husarska toga Bernuli", 40);
+		armor1 = new Armor("¯elazna zbroja", 10);
+		armor2 = new Armor("Kolczaty ¿upan", 20);
+		armor3 = new Armor("Szata niewiernego Osazego", 30);
+		armor4 = new Armor("Husarska toga Bernuli", 40);
 	}
 
 	private int defense;
