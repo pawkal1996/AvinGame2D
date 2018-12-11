@@ -9,6 +9,9 @@ public abstract class Item {
 	private static int id=0;
 	protected String name;
 	
+	/**
+	 * This method loads items from lists
+	 */
 	public static void createItems() {
 		Sword.createSwords();
 		Armor.createArmors();

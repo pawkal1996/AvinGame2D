@@ -10,17 +10,13 @@ import java.util.Random;
  */
 public class MagicBox extends Item {
 	private static ArrayList<Item> magicBoxDrop = new ArrayList<Item>();
+	/**
+	 * This method loads items possible to drop from Magic Box.
+	 */
 	public static void initDropBox() {
-		magicBoxDrop.add(Sword.sword1);
-		magicBoxDrop.add(Sword.sword2);
-		magicBoxDrop.add(Sword.sword3);
-		magicBoxDrop.add(Sword.sword4);
-		magicBoxDrop.add(Armor.armor1);
-		magicBoxDrop.add(Armor.armor2);
-		magicBoxDrop.add(Armor.armor3);
-		magicBoxDrop.add(Armor.armor4);
-		magicBoxDrop.add(Gold.getGold100());
-		magicBoxDrop.add(Gold.getGold150());
+		magicBoxDrop.addAll(Sword.getSwords());
+		magicBoxDrop.addAll(Armor.getArmors());
+		magicBoxDrop.addAll(Gold.getGold());
 	}
 	
 	public static Item openDropBox() {

@@ -1,18 +1,15 @@
 package items;
 
+import java.util.ArrayList;
+
 /**
  * Class for armors
  * @author Pawe³ K
  *
  */
 public class Armor extends Item {
-	
+	private static ArrayList<Armor> armors = new ArrayList<>();
 	private int defense;
-	
-	static Armor armor1;
-	static Armor armor2;
-	static Armor armor3;
-	static Armor armor4;
 	
 	public Armor(String name, int defense) {
 		super();
@@ -21,13 +18,19 @@ public class Armor extends Item {
 	}
 	
 	public static void createArmors() {
-		armor1 = new Armor("Zelazna zbroja", 10);
-		armor2 = new Armor("Kolczaty ¿upan", 20);
-		armor3 = new Armor("Szata niewiernego Osazego", 30);
-		armor4 = new Armor("Husarska toga Bernuli", 40);
+		armors.add(new Armor("Zelazna zbroja", 10));
+		armors.add(new Armor("Kolczaty ¿upan", 20));
+		armors.add(new Armor("Szata niewiernego Osazego", 30));
+		armors.add(new Armor("Husarska toga Bernuli", 40));
+	}	
+
+	public static ArrayList<Armor> getArmors() {
+		return armors;
 	}
 
-	
+	public static void setArmors(ArrayList<Armor> armors) {
+		Armor.armors = armors;
+	}
 
 	public int getDefense() {
 		return defense;
