@@ -21,13 +21,11 @@ public class Gold extends Item {
 		return gold;
 	}
 
-	public static void setGold(ArrayList<Gold> gold) {
-		Gold.gold = gold;
-	}
-
 	public static void createGold() {
-		gold.add(new Gold(100));
-		gold.add(new Gold(150));
+		final int defaultNumberOfGold100 = 100;
+		final int defaultNumberOfGold150 = 150;
+		gold.add(new Gold(defaultNumberOfGold100));
+		gold.add(new Gold(defaultNumberOfGold150));
 	}
 	public int getValue() {
 		return value;

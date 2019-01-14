@@ -28,10 +28,6 @@ public class Armor extends Item {
 		return armors;
 	}
 
-	public static void setArmors(ArrayList<Armor> armors) {
-		Armor.armors = armors;
-	}
-
 	public int getDefense() {
 		return defense;
 	}

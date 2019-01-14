@@ -19,7 +19,7 @@ public class Sword extends Item {
 	}
 
 	public static void createSwords() {
-		swords.add(new Sword("¯elazny sztylet", 10));
+		swords.add(new Sword("Zelazny sztylet", 10));
 		swords.add(new Sword("Diabelska brzytwa", 20));
 		swords.add(new Sword("Piekielny tasak", 30));
 		swords.add(new Sword("Epicka halabarda", 40));
@@ -27,10 +27,6 @@ public class Sword extends Item {
 
 	public static ArrayList<Sword> getSwords() {
 		return swords;
-	}
-
-	public static void setSwords(ArrayList<Sword> swords) {
-		Sword.swords = swords;
 	}
 
 	public int getAttack() {
