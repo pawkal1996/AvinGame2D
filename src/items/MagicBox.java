@@ -25,7 +25,5 @@ public class MagicBox extends Item {
 		int n = random.nextInt(magicBoxDrop.size());
 		drop = magicBoxDrop.get(n);
 		return drop;
-	}
-	
-	
+	}	
 }
